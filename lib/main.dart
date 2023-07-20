@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:onboarding/screens/homa_page.dart';
 import 'package:onboarding/screens/on_boarding.dart';
 
 void main() {
@@ -10,9 +11,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Onboarding(),
+      routes: {
+        Onboarding.id: (context) => const Onboarding(),
+        HomePage.id: (context) => const HomePage(),
+      },
+      initialRoute: Onboarding.id,
     );
   }
 }
