@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:onboarding/screens/homa_page.dart';
+import 'package:onboarding/screens/sign_in_and_up.dart';
 
 class StartBtn extends StatelessWidget {
   const StartBtn({
@@ -10,7 +10,7 @@ class StartBtn extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.pushNamed(context, HomePage.id);
+        Navigator.pushNamed(context, SignInAndUp.id);
       },
       child: Container(
         width: 350,

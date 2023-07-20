@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:onboarding/models/on_boarding_model.dart';
-import 'package:onboarding/screens/homa_page.dart';
+import 'package:onboarding/screens/sign_in_and_up.dart';
 import 'package:onboarding/widgets/back_btn.dart';
 import 'package:onboarding/widgets/bulid_dods.dart';
 import 'package:onboarding/widgets/next_btn.dart';
@@ -44,7 +44,7 @@ class _OnboardingState extends State<Onboarding> {
                     padding: const EdgeInsets.only(right: 20.0),
                     child: InkWell(
                       onTap: () {
-                        Navigator.pushNamed(context, HomePage.id);
+                        Navigator.pushNamed(context, SignInAndUp.id);
                       },
                       child: const Text("Skip"),
                     ),
